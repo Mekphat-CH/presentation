@@ -1905,52 +1905,56 @@
             <div class="slide-header">
                 <h2>ผลการประเมินจากผู้เชี่ยวชาญ</h2>
             </div>
-            <div style="padding:30px 60px;display:flex;gap:30px;height:calc(100% - 100px);align-items:center;background:var(--bg-light);">
-                <div style="flex:1.2;">
-                    <div style="background:#fff;border-radius:15px;padding:30px;box-shadow:0 10px 40px rgba(0,0,0,0.08);">
-                        <h4 style="color:var(--primary);margin-bottom:15px;font-size:1.1rem;">ค่า IOC (Index of Item Objective Congruence)</h4>
-                        <p style="font-size:1rem;color:#555;margin-bottom:15px;">ตรวจสอบความสอดคล้องของแบบสอบถามโดยผู้เชี่ยวชาญ 3 ท่าน</p>
-                        <div style="background:#E8F5E9;padding:15px 20px;border-radius:10px;border-left:4px solid #27AE60;margin-bottom:20px;">
-                            <span style="font-size:1rem;color:#27AE60;font-weight:700;">ผ่านเกณฑ์ IOC ≥ 0.50 จำนวน 14 ข้อ</span>
-                            <span style="font-size:0.9rem;color:#555;display:block;margin-top:4px;">จาก 15 ข้อ ไม่ผ่าน 1 ข้อ → นำ 14 ข้อไปประเมินประสิทธิภาพ</span>
-                        </div>
-                        <h4 style="color:var(--primary);margin-bottom:15px;font-size:1.1rem;">ผลประเมินประสิทธิภาพระบบ</h4>
-                        <table style="width:100%;border-collapse:collapse;font-size:0.85rem;">
-                            <thead>
-                                <tr style="background:#8B0000;color:#fff;">
-                                    <th style="padding:8px;text-align:left;">ด้านการประเมิน</th>
-                                    <th style="padding:8px;text-align:center;">x̄</th>
-                                    <th style="padding:8px;text-align:center;">S.D.</th>
-                                    <th style="padding:8px;text-align:center;">ระดับ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr style="background:#fff;"><td style="padding:8px;border-bottom:1px solid #eee;">ด้านความถูกต้องเหมาะสมของเนื้อหา (ตารางที่ 9)</td><td style="text-align:center;border-bottom:1px solid #eee;">4.96</td><td style="text-align:center;border-bottom:1px solid #eee;">0.09</td><td style="text-align:center;border-bottom:1px solid #eee;color:#27AE60;font-weight:600;">มากที่สุด</td></tr>
-                                <tr style="background:#f9f9f9;"><td style="padding:8px;border-bottom:1px solid #eee;">ด้านความถูกต้องของการทำงาน (ตารางที่ 10)</td><td style="text-align:center;border-bottom:1px solid #eee;">4.65</td><td style="text-align:center;border-bottom:1px solid #eee;">0.58</td><td style="text-align:center;border-bottom:1px solid #eee;color:#27AE60;font-weight:600;">มากที่สุด</td></tr>
-                                <tr style="background:#fff;"><td style="padding:8px;border-bottom:1px solid #eee;">ด้านประโยชน์และการนำไปใช้ (ตารางที่ 11)</td><td style="text-align:center;border-bottom:1px solid #eee;">4.68</td><td style="text-align:center;border-bottom:1px solid #eee;">0.51</td><td style="text-align:center;border-bottom:1px solid #eee;color:#27AE60;font-weight:600;">มากที่สุด</td></tr>
-                                <tr style="background:#FFF5F5;font-weight:700;"><td style="padding:10px;border-top:2px solid #8B0000;">รวมเฉลี่ยทุกด้าน</td><td style="text-align:center;border-top:2px solid #8B0000;">4.77</td><td style="text-align:center;border-top:2px solid #8B0000;">0.43</td><td style="text-align:center;border-top:2px solid #8B0000;color:#8B0000;">มากที่สุด</td></tr>
-                            </tbody>
-                        </table>
+            <div style="padding:15px 40px;display:flex;gap:25px;height:calc(100% - 90px);align-items:stretch;background:var(--bg-light);">
+                <!-- ฝั่งซ้าย: IOC -->
+                <div style="flex:1;background:#fff;border-radius:15px;padding:25px;box-shadow:0 8px 30px rgba(0,0,0,0.06);display:flex;flex-direction:column;">
+                    <h4 style="color:var(--primary);margin-bottom:12px;font-size:1.05rem;border-bottom:2px solid #8B0000;padding-bottom:8px;">ค่า IOC (Index of Item Objective Congruence)</h4>
+                    <p style="font-size:0.85rem;color:#555;margin-bottom:10px;">ผู้เชี่ยวชาญ <strong>3</strong> ท่าน ตรวจสอบความสอดคล้องของแบบสอบถาม</p>
+                    <table style="width:100%;border-collapse:collapse;font-size:0.75rem;margin-bottom:12px;">
+                        <thead>
+                            <tr style="background:#8B0000;color:#fff;">
+                                <th style="padding:6px;text-align:left;">ด้าน</th>
+                                <th style="padding:6px;text-align:center;">จำนวนข้อ</th>
+                                <th style="padding:6px;text-align:center;">ผลลัพธ์</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background:#fff;"><td style="padding:6px;border-bottom:1px solid #eee;">ด้านการออกแบบส่วนติดต่อผู้ใช้</td><td style="text-align:center;border-bottom:1px solid #eee;">5</td><td style="text-align:center;border-bottom:1px solid #eee;color:#27AE60;font-weight:600;">ผ่านทั้ง 5 ข้อ</td></tr>
+                            <tr style="background:#f9f9f9;"><td style="padding:6px;border-bottom:1px solid #eee;">ด้านความถูกต้องของการทำงาน</td><td style="text-align:center;border-bottom:1px solid #eee;">5</td><td style="text-align:center;border-bottom:1px solid #eee;color:#27AE60;font-weight:600;">ผ่านทั้ง 5 ข้อ</td></tr>
+                            <tr style="background:#fff;"><td style="padding:6px;border-bottom:1px solid #eee;">ด้านประโยชน์และการนำไปใช้</td><td style="text-align:center;border-bottom:1px solid #eee;">5</td><td style="text-align:center;border-bottom:1px solid #eee;color:#E74C3C;font-weight:600;">ผ่าน 4 / ไม่ผ่าน 1</td></tr>
+                            <tr style="background:#FFF5F5;font-weight:700;"><td style="padding:8px;border-top:2px solid #8B0000;">รวม</td><td style="text-align:center;border-top:2px solid #8B0000;">15</td><td style="text-align:center;border-top:2px solid #8B0000;color:#8B0000;">ผ่าน 14 ข้อ</td></tr>
+                        </tbody>
+                    </table>
+                    <div style="background:#FFF5F5;padding:10px 15px;border-radius:8px;border-left:3px solid #E74C3C;font-size:0.78rem;color:#555;margin-bottom:8px;">
+                        ข้อที่ไม่ผ่าน: "ระบบช่วยลดเวลาการกรอกข้อมูล" (IOC = 0.33) → <strong>ตัดออก</strong>
+                    </div>
+                    <div style="background:#E8F5E9;padding:10px 15px;border-radius:8px;border-left:3px solid #27AE60;font-size:0.78rem;color:#555;">
+                        เกณฑ์: IOC ≥ 0.50 = ใช้ได้ → นำ <strong>14 ข้อ</strong> ไปประเมินประสิทธิภาพ
                     </div>
                 </div>
-                <div style="flex:0.6;display:flex;flex-direction:column;gap:20px;">
-                    <div style="background:linear-gradient(135deg,#8B0000,#B22222);color:#fff;padding:30px;border-radius:15px;text-align:center;">
-                        <div style="font-size:3.5rem;font-weight:800;">4.77</div>
-                        <div style="font-size:1.1rem;opacity:0.9;">จาก 5.00 คะแนน</div>
-                        <div style="margin-top:10px;background:rgba(255,255,255,0.2);padding:8px 20px;border-radius:20px;display:inline-block;font-size:1rem;">ระดับมากที่สุด</div>
-                    </div>
-                    <div style="background:#fff;padding:20px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.06);">
-                        <h4 style="color:var(--primary);margin-bottom:10px;font-size:0.95rem;">ผู้เชี่ยวชาญ</h4>
-                        <ul style="list-style:none;padding:0;font-size:0.85rem;color:#555;">
-                            <li style="padding:5px 0;">IOC: ผู้เชี่ยวชาญ <strong>3</strong> ท่าน (15 ข้อ)</li>
-                            <li style="padding:5px 0;">ไม่ผ่าน 1 ข้อ → เหลือ <strong>14</strong> ข้อ</li>
-                            <li style="padding:5px 0;">ประเมินประสิทธิภาพ: ผู้เชี่ยวชาญ <strong>5</strong> ท่าน</li>
-                            <li style="padding:5px 0;">เกณฑ์: 4.51-5.00 = มากที่สุด</li>
-                        </ul>
-                    </div>
-                    <div style="background:#E8F5E9;padding:15px;border-radius:10px;text-align:center;border:1px solid #C8E6C9;">
-                        <div style="font-size:0.9rem;color:#27AE60;font-weight:600;">S.D. = 0.43</div>
-                        <div style="font-size:0.8rem;color:#666;margin-top:4px;">ผู้เชี่ยวชาญเห็นตรงกัน</div>
+                <!-- ฝั่งขวา: ประเมินประสิทธิภาพ -->
+                <div style="flex:1;background:#fff;border-radius:15px;padding:25px;box-shadow:0 8px 30px rgba(0,0,0,0.06);display:flex;flex-direction:column;">
+                    <h4 style="color:var(--primary);margin-bottom:12px;font-size:1.05rem;border-bottom:2px solid #8B0000;padding-bottom:8px;">ผลประเมินประสิทธิภาพระบบ</h4>
+                    <p style="font-size:0.85rem;color:#555;margin-bottom:10px;">ผู้เชี่ยวชาญ <strong>5</strong> ท่าน ประเมินแบบสอบถาม 14 ข้อ</p>
+                    <table style="width:100%;border-collapse:collapse;font-size:0.75rem;margin-bottom:12px;">
+                        <thead>
+                            <tr style="background:#8B0000;color:#fff;">
+                                <th style="padding:6px;text-align:left;">ด้านการประเมิน</th>
+                                <th style="padding:6px;text-align:center;">x̄</th>
+                                <th style="padding:6px;text-align:center;">S.D.</th>
+                                <th style="padding:6px;text-align:center;">ระดับ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background:#fff;"><td style="padding:6px;border-bottom:1px solid #eee;">ด้านความถูกต้องเหมาะสมของเนื้อหา</td><td style="text-align:center;border-bottom:1px solid #eee;">4.96</td><td style="text-align:center;border-bottom:1px solid #eee;">0.09</td><td style="text-align:center;border-bottom:1px solid #eee;color:#27AE60;font-weight:600;">มากที่สุด</td></tr>
+                            <tr style="background:#f9f9f9;"><td style="padding:6px;border-bottom:1px solid #eee;">ด้านความถูกต้องของการทำงาน</td><td style="text-align:center;border-bottom:1px solid #eee;">4.65</td><td style="text-align:center;border-bottom:1px solid #eee;">0.58</td><td style="text-align:center;border-bottom:1px solid #eee;color:#27AE60;font-weight:600;">มากที่สุด</td></tr>
+                            <tr style="background:#fff;"><td style="padding:6px;border-bottom:1px solid #eee;">ด้านประโยชน์และการนำไปใช้</td><td style="text-align:center;border-bottom:1px solid #eee;">4.68</td><td style="text-align:center;border-bottom:1px solid #eee;">0.51</td><td style="text-align:center;border-bottom:1px solid #eee;color:#27AE60;font-weight:600;">มากที่สุด</td></tr>
+                            <tr style="background:#FFF5F5;font-weight:700;"><td style="padding:8px;border-top:2px solid #8B0000;">รวมเฉลี่ยทุกด้าน</td><td style="text-align:center;border-top:2px solid #8B0000;">4.77</td><td style="text-align:center;border-top:2px solid #8B0000;">0.43</td><td style="text-align:center;border-top:2px solid #8B0000;color:#8B0000;">มากที่สุด</td></tr>
+                        </tbody>
+                    </table>
+                    <div style="background:linear-gradient(135deg,#8B0000,#B22222);color:#fff;padding:20px;border-radius:12px;text-align:center;margin-top:auto;">
+                        <div style="font-size:2.5rem;font-weight:800;">4.77 <span style="font-size:1rem;opacity:0.8;">/ 5.00</span></div>
+                        <div style="margin-top:6px;background:rgba(255,255,255,0.2);padding:5px 15px;border-radius:15px;display:inline-block;font-size:0.9rem;">ระดับมากที่สุด (S.D. = 0.43)</div>
                     </div>
                 </div>
             </div>
